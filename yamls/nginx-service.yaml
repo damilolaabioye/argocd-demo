@@ -13,3 +13,11 @@ spec:
   selector:
     app: nginx
   type: NodePort
+
+---
+nginx:
+  uri: "nginx://nginx:80"
+
+serviceMonitor:
+  additionalLabels:
+    release: prometheus
